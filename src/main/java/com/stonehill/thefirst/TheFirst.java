@@ -1,6 +1,7 @@
 package com.stonehill.thefirst;
 
 import com.stonehill.thefirst.block.ModBlocks;
+import com.stonehill.thefirst.item.ModCreativeModeTabs;
 import com.stonehill.thefirst.item.ModItems;
 import org.slf4j.Logger;
 
@@ -49,6 +50,7 @@ public class TheFirst {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
