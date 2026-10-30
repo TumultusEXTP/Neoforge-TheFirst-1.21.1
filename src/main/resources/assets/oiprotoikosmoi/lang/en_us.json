@@ -1,0 +1,18 @@
+{
+  "itemGroup.oiprotoikosmoi": "Example Mod Tab",
+  "block.oiprotoikosmoi.example_block": "Example Block",
+  "block.oiprotoikosmoi.bismuth_block": "Block of Bismuth",
+  "block.oiprotoikosmoi.bismuth_ore": "Bismuth Ore",
+
+  "item.oiprotoikosmoi.example_item": "Example Item",
+  "item.oiprotoikosmoi.bismuth": "Bismuth",
+  "item.oiprotoikosmoi.raw_bismuth": "Raw Bismuth",
+
+  "oiprotoikosmoi.configuration.title": "Example Mod Configs",
+  "oiprotoikosmoi.configuration.section.oiprotoikosmoi.common.toml": "Example Mod Configs",
+  "oiprotoikosmoi.configuration.section.oiprotoikosmoi.common.toml.title": "Example Mod Configs",
+  "oiprotoikosmoi.configuration.items": "Item List",
+  "oiprotoikosmoi.configuration.logDirtBlock": "Log Dirt Block",
+  "oiprotoikosmoi.configuration.magicNumberIntroduction": "Magic Number Text",
+  "oiprotoikosmoi.configuration.magicNumber": "Magic Number"
+}
