@@ -17,6 +17,12 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheFirst.MODID);
 
+    /*
+
+    !!!! REMOVE THE FOLLOWING CREATIVE TABS WHEN DONE WITH TUTORIAL !!!!
+
+     */
+
     public static final Supplier<CreativeModeTab> BISMUTH_ITEMS_TAB = CREATIVE_MODE_TAB.register("bismuth_items_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BISMUTH.get()))
                     .title(Component.translatable("creativetab.oiprotoikosmoi.bismuth_items"))
@@ -32,6 +38,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.BISMUTH_BLOCK);
                         output.accept(ModBlocks.BISMUTH_ORE);
+                        output.accept(ModBlocks.DEEPSLATE_BISMUTH_ORE);
                     }).build());
 
     public static  void register(IEventBus eventBus) {
