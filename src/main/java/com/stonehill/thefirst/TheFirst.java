@@ -65,6 +65,12 @@ public class TheFirst {
 
     }
 
+    /*
+
+    !!!! REMOVE THE FOLLOWING TAB INSERTS WHEN DONE WITH TUTORIAL !!!!
+
+     */
+
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
