@@ -7,11 +7,15 @@
   "block.oiprotoikosmoi.bismuth_ore": "Bismuth Ore",
   "block.oiprotoikosmoi.deepslate_bismuth_ore": "Deepslate Bismuth Ore",
   "block.oiprotoikosmoi.magic_block": "Magic Block",
+  "tooltip.oiprotoikosmoi.magic_block.tooltip": "This Block is very §9MAGICAL§r",
 
   "item.oiprotoikosmoi.bismuth": "Bismuth",
   "item.oiprotoikosmoi.raw_bismuth": "Raw Bismuth",
   "item.oiprotoikosmoi.chisel": "Chisel",
+  "tooltip.oiprotoikosmoi.chisel.shift_down": "This Item can chisel Blocks into Bricks",
+  "tooltip.oiprotoikosmoi.chisel": "Press §eShift§r for more Information",
   "item.oiprotoikosmoi.radish": "Radish",
+  "tooltip.oiprotoikosmoi.radish.tooltip": "Tastes really great!",
   "item.oiprotoikosmoi.frostfire_ice": "Frostfire Ice",
   "item.oiprotoikosmoi.starlight_ashes": "Starlight Ashes",
 
