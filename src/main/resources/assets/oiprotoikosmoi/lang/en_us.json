@@ -11,6 +11,9 @@
   "item.oiprotoikosmoi.bismuth": "Bismuth",
   "item.oiprotoikosmoi.raw_bismuth": "Raw Bismuth",
   "item.oiprotoikosmoi.chisel": "Chisel",
+  "item.oiprotoikosmoi.radish": "Radish",
+  "item.oiprotoikosmoi.frostfire_ice": "Frostfire Ice",
+  "item.oiprotoikosmoi.starlight_ashes": "Starlight Ashes",
 
   "oiprotoikosmoi.configuration.title": "Example Mod Configs",
   "oiprotoikosmoi.configuration.section.oiprotoikosmoi.common.toml": "Example Mod Configs",
