@@ -1,6 +1,7 @@
 package com.stonehill.thefirst.block;
 
 import com.stonehill.thefirst.TheFirst;
+import com.stonehill.thefirst.block.custom.MagicBlock;
 import com.stonehill.thefirst.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -21,7 +22,7 @@ public class ModBlocks {
 
     /*
 
-    !!!! REMOVE THE FOLLOWING BISMUTH BLOCK SETS AND ORES WHEN DONE WITH TUTORIAL !!!!
+    !!!! REMOVE THE FOLLOWING BLOCKS WHEN DONE WITH TUTORIAL !!!!
 
      */
 
@@ -36,6 +37,10 @@ public class ModBlocks {
     //bismuth block set
     public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBlock("bismuth_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    //magic block set
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.SOUL_SAND)));
 
 
 
