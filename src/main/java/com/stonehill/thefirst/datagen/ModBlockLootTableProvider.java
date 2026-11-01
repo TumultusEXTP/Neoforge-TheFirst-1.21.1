@@ -27,6 +27,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+
+        /*
+
+        !!!! REMOVE THE FOLLOWING TABLES WHEN DONE WITH TUTORIAL !!!!
+
+        */
+
         dropSelf(ModBlocks.BISMUTH_BLOCK.get());
         dropSelf(ModBlocks.BISMUTH_BLOCK.get());
         dropSelf(ModBlocks.BISMUTH_STAIRS.get());

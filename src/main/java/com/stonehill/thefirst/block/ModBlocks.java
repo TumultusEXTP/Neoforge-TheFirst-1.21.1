@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -21,10 +22,18 @@ public class ModBlocks {
 
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TheFirst.MODID);
 
-    /*
+
     public static final DeferredBlock<Block> INCONTINUITOUS_BLOCK = registerBlock("incontinuitous_block",
-            () -> new IncontinuitousBlock(Block)
-     */
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f, 5f)
+                    .sound(SoundType.SCULK)
+                    .friction(1f)
+                    .speedFactor(0.8f)
+                    .jumpFactor(0.1f)
+                    .lightLevel(s -> 4)
+                    .mapColor(MapColor.COLOR_BLACK)
+                    .noLootTable()));
+
 
     /*
 

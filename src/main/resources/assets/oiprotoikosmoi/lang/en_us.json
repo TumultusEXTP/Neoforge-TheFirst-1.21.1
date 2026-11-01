@@ -1,8 +1,9 @@
 {
-  "itemGroup.oiprotoikosmoi": "Example Mod Tab",
+  "creativetab.oiprotoikosmoi.the_first_incontinuity_tab": "The First: The Incontinuity",
   "creativetab.oiprotoikosmoi.bismuth_blocks": "Bismuth Blocks",
   "creativetab.oiprotoikosmoi.bismuth_items": "Bismuth Items",
 
+  "block.oiprotoikosmoi.incontinuitous_block": "Incontinuitous Block",
   "block.oiprotoikosmoi.bismuth_block": "Block of Bismuth",
   "block.oiprotoikosmoi.bismuth_ore": "Bismuth Ore",
   "block.oiprotoikosmoi.deepslate_bismuth_ore": "Deepslate Bismuth Ore",

@@ -20,6 +20,15 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
+        blockWithItem(ModBlocks.INCONTINUITOUS_BLOCK);
+
+        /*
+
+!!!! REMOVE THE FOLLOWING STATES WHEN DONE WITH TUTORIAL !!!!
+
+     */
+
         blockWithItem(ModBlocks.BISMUTH_BLOCK);
 
         blockWithItem(ModBlocks.BISMUTH_ORE);
