@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "oiprotoikosmoi:block/bismuth_block"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "oiprotoikosmoi:block/bismuth_block"
+  }
+}

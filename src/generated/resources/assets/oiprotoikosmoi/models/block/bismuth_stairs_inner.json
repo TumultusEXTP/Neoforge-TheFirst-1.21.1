@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "oiprotoikosmoi:block/bismuth_block",
+    "side": "oiprotoikosmoi:block/bismuth_block",
+    "top": "oiprotoikosmoi:block/bismuth_block"
+  }
+}
