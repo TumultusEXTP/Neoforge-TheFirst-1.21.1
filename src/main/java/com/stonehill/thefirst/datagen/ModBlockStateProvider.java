@@ -2,10 +2,13 @@ package com.stonehill.thefirst.datagen;
 
 import com.stonehill.thefirst.TheFirst;
 import com.stonehill.thefirst.block.ModBlocks;
+import com.stonehill.thefirst.block.custom.BismuthLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -42,6 +45,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BISMUTH_PRESSURE_PLATE);
         blockItem(ModBlocks.BISMUTH_FENCE_GATE);
         blockItem(ModBlocks.BISMUTH_TRAPDOOR, "_bottom");
+
+        customLamp();
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
@@ -54,5 +59,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("oiprotoikosmoi:block/" + deferredBlock.getId().getPath() + appendix));
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.BISMUTH_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(BismuthLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("bismuth_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(TheFirst.MODID, "block/" + "bismuth_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("bismuth_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(TheFirst.MODID, "block/" + "bismuth_lamp_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlocks.BISMUTH_LAMP.get(), models().cubeAll("bismuth_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(TheFirst.MODID, "block/" + "bismuth_lamp_on")));
     }
 }

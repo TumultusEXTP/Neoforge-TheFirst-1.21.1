@@ -1,6 +1,7 @@
 package com.stonehill.thefirst.block;
 
 import com.stonehill.thefirst.TheFirst;
+import com.stonehill.thefirst.block.custom.BismuthLampBlock;
 import com.stonehill.thefirst.block.custom.MagicBlock;
 import com.stonehill.thefirst.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -21,6 +22,11 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TheFirst.MODID);
 
     /*
+    public static final DeferredBlock<Block> INCONTINUITOUS_BLOCK = registerBlock("incontinuitous_block",
+            () -> new IncontinuitousBlock(Block)
+     */
+
+    /*
 
     !!!! REMOVE THE FOLLOWING BLOCKS WHEN DONE WITH TUTORIAL !!!!
 
@@ -37,6 +43,10 @@ public class ModBlocks {
     //bismuth block set
     public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBlock("bismuth_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
+    public static final DeferredBlock<Block> BISMUTH_LAMP = registerBlock("bismuth_lamp",
+            () -> new BismuthLampBlock(BlockBehaviour.Properties.of().strength(2f)
+                    .requiresCorrectToolForDrops().lightLevel(state -> state.getValue(BismuthLampBlock.CLICKED) ? 15 : 0)));
 
     //bismuth transparent blocks
     public static final DeferredBlock<StairBlock> BISMUTH_STAIRS =  registerBlock("bismuth_stairs",
