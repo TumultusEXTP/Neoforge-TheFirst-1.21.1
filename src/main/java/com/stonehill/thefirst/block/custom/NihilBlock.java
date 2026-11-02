@@ -23,14 +23,25 @@ public class NihilBlock extends Block {
         super(properties);
     }
 
+    /*
     @Override
     protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
-            if(!isNihil(itemEntity.getItem()) && !isIncontinuitous(itemEntity.getItem())){
+            if(!(isNihil(itemEntity.getItem()) || isIncontinuitous(itemEntity.getItem()))){
                 itemEntity.setItem(new ItemStack(Items.BLACK_DYE, itemEntity.getItem().getCount()));
-            }
-            if(isNihil(itemEntity.getItem())){
+            } else if(isNihil(itemEntity.getItem())){
                 itemEntity.setItem(new ItemStack(ModBlocks.INCONTINUITOUS_BLOCK, itemEntity.getItem().getCount()));
+            }
+        }
+        super.entityInside(state, level, pos, entity);
+    }
+    */
+
+    @Override
+    protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
+        if(entity instanceof ItemEntity itemEntity) {
+            if(itemEntity.getItem().getItem() == Items.DANDELION) {
+                itemEntity.setItem(new ItemStack(Items.WITHER_ROSE, itemEntity.getItem().getCount()));
             }
         }
         super.entityInside(state, level, pos, entity);
