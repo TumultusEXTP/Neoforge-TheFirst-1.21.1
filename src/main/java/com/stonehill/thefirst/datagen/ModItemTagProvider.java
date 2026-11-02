@@ -1,6 +1,7 @@
 package com.stonehill.thefirst.datagen;
 
 import com.stonehill.thefirst.TheFirst;
+import com.stonehill.thefirst.block.ModBlocks;
 import com.stonehill.thefirst.item.ModItems;
 import com.stonehill.thefirst.util.ModTags;
 import net.minecraft.core.HolderLookup;
@@ -18,8 +19,18 @@ public class ModItemTagProvider extends ItemTagsProvider {
         super(output, lookupProvider, blockTags, TheFirst.MODID, existingFileHelper);
     }
 
+
+
     @Override
     protected void addTags(HolderLookup.Provider provider) {
+
+        tag(ModTags.Items.NIHIL_ITEMS)
+                .add(ModBlocks.NIHIL_BLOCK.get().asItem())
+                .add(Items.BLACK_DYE);
+
+        tag(ModTags.Items.INCONTINUITOUS_ITEMS)
+                .add(ModBlocks.INCONTINUITOUS_BLOCK.get().asItem());
+
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(Items.DIAMOND)
                 .add(Items.STICK)

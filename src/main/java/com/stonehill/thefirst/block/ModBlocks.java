@@ -34,6 +34,13 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_BLACK)
                     .noLootTable()));
 
+    public static final DeferredBlock<Block> NIHIL_BLOCK = registerBlock("nihil_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f, 5f)
+                    .sound(SoundType.EMPTY)
+                    .mapColor(MapColor.COLOR_BLACK)
+                    .noLootTable()
+                    .noCollission()));
 
     /*
 

@@ -23,6 +23,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.INCONTINUITOUS_BLOCK);
 
+        blockWithItem(ModBlocks.NIHIL_BLOCK);
+
         /*
 
 !!!! REMOVE THE FOLLOWING STATES WHEN DONE WITH TUTORIAL !!!!

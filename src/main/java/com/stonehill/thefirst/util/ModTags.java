@@ -19,6 +19,9 @@ public class ModTags {
 
     public static class Items {
 
+        public static final TagKey<Item> NIHIL_ITEMS = createTag("nihil_items");
+        public static final TagKey<Item> INCONTINUITOUS_ITEMS = createTag("incontinuitous_items");
+
         public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
 
         public static TagKey<Item> createTag(String name) {

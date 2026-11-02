@@ -22,7 +22,11 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.INCONTINUITOUS_BLOCK))
                     .title(Component.translatable("creativetab.oiprotoikosmoi.the_first_incontinuity_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+
                         output.accept(ModBlocks.INCONTINUITOUS_BLOCK);
+
+                        output.accept(ModBlocks.NIHIL_BLOCK);
+
                     }).build());
 
     /*
