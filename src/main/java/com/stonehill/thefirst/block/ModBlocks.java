@@ -3,6 +3,7 @@ package com.stonehill.thefirst.block;
 import com.stonehill.thefirst.TheFirst;
 import com.stonehill.thefirst.block.custom.BismuthLampBlock;
 import com.stonehill.thefirst.block.custom.MagicBlock;
+import com.stonehill.thefirst.block.custom.NihilBlock;
 import com.stonehill.thefirst.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -35,12 +36,12 @@ public class ModBlocks {
                     .noLootTable()));
 
     public static final DeferredBlock<Block> NIHIL_BLOCK = registerBlock("nihil_block",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new NihilBlock(BlockBehaviour.Properties.of()
                     .strength(2f, 5f)
                     .sound(SoundType.EMPTY)
                     .mapColor(MapColor.COLOR_BLACK)
                     .noLootTable()
-                    /*.noCollission()*/));
+                    .noCollission()));
 
     /*
 

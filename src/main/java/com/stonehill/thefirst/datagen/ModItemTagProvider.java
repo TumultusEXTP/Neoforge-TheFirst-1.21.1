@@ -32,7 +32,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.INCONTINUITOUS_BLOCK.get().asItem());
 
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(Items.DIAMOND)
+                .add(Items.DIAMOND) //make coal (unmetamorphize it i guess)
                 .add(Items.STICK)
                 .add(Items.COMPASS)
                 .add(ModItems.BISMUTH.get())
