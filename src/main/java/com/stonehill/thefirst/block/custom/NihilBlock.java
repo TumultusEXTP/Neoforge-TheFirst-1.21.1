@@ -37,14 +37,29 @@ public class NihilBlock extends Block {
     }
     */
 
-    @Override
+    /*@Override
     protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         if(entity instanceof ItemEntity itemEntity) {
-            if(itemEntity.getItem().getItem() == Items.DANDELION) {
+            if(true*itemEntity.getItem().getItem() == Items.DANDELION*) {
+                //itemEntity.setItem(new ItemStack(Items.WITHER_ROSE, itemEntity.getItem().getCount()));
+                itemEntity.hurt(level.damageSources().cactus(), 1.0F);
+            }
+        }
+        //super.entityInside(state, level, pos, entity);
+    }*/
+
+    @Override
+    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
+        if (entity instanceof ItemEntity itemEntity) {
+            /*if(isNihil(itemEntity.getItem())) {
+                itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
+            }*/
+
+            if(true) {
                 itemEntity.setItem(new ItemStack(Items.WITHER_ROSE, itemEntity.getItem().getCount()));
             }
         }
-        super.entityInside(state, level, pos, entity);
+        super.stepOn(level, pos, state, entity);
     }
 
     private boolean isNihil(ItemStack item) {

@@ -40,7 +40,7 @@ public class ModBlocks {
                     .sound(SoundType.EMPTY)
                     .mapColor(MapColor.COLOR_BLACK)
                     .noLootTable()
-                    .noCollission()));
+                    /*.noCollission()*/));
 
     /*
 
