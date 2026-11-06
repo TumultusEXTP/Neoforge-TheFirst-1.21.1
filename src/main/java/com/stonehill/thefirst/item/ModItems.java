@@ -1,12 +1,16 @@
 package com.stonehill.thefirst.item;
 
 import com.stonehill.thefirst.TheFirst;
+import com.stonehill.thefirst.block.ModBlocks;
 import com.stonehill.thefirst.item.custom.ChiselItem;
 import com.stonehill.thefirst.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SolidBucketItem;
 import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -16,6 +20,15 @@ import java.util.List;
 public class ModItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TheFirst.MODID);
+
+    public static final DeferredItem<Item> NIHIL_BUCKET = ITEMS.register("nihil_bucket",
+            () -> new SolidBucketItem(ModBlocks.NIHIL_BLOCK.get(), SoundEvents.EMPTY, new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> INCONTINUITOUS_SHARD = ITEMS.register("incontinuitous_shard",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> NIHILITY = ITEMS.register("nihility",
+            () -> new Item(new Item.Properties()));
 
     /*
 

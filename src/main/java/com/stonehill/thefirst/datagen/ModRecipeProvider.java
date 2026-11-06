@@ -20,6 +20,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NIHIL_BLOCK.get())
+                .pattern("nnn")
+                .pattern("nnn")
+                .pattern("nnn")
+                .define('n', ModItems.NIHILITY.get())
+                .unlockedBy("has_nihility", has(ModItems.NIHILITY))
+                .save(recipeOutput);
+
         List<ItemLike> BISMUTH_SMELTABLES = List.of(ModItems.RAW_BISMUTH, ModBlocks.BISMUTH_ORE, ModBlocks.DEEPSLATE_BISMUTH_ORE);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BISMUTH_BLOCK.get())
                 .pattern("BBB")

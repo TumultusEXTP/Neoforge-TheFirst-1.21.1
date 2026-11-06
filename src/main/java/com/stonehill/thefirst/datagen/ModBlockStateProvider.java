@@ -22,6 +22,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
 
         blockWithItem(ModBlocks.INCONTINUITOUS_BLOCK);
+        blockWithItem(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK);
 
         blockWithItem(ModBlocks.NIHIL_BLOCK);
 

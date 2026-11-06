@@ -4,19 +4,25 @@ import com.stonehill.thefirst.TheFirst;
 import com.stonehill.thefirst.block.custom.BismuthLampBlock;
 import com.stonehill.thefirst.block.custom.MagicBlock;
 import com.stonehill.thefirst.block.custom.NihilBlock;
+import com.stonehill.thefirst.block.custom.UnstableIncontinuityBlock;
 import com.stonehill.thefirst.item.ModItems;
+import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.List;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -33,7 +39,24 @@ public class ModBlocks {
                     .jumpFactor(0.1f)
                     .lightLevel(s -> 4)
                     .mapColor(MapColor.COLOR_BLACK)
-                    .noLootTable()));
+                    .noLootTable()
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<Block> UNSTABLE_INCONTINUITY_BLOCK = registerBlock("unstable_incontinuity_block",
+            () -> new UnstableIncontinuityBlock(BlockBehaviour.Properties.of()
+                    .strength(2f, 0f)
+                    .sound(SoundType.GLASS)
+                    .lightLevel(s -> 4)
+                    .mapColor(MapColor.COLOR_GRAY)
+                    .requiresCorrectToolForDrops()
+                    .friction(1f)
+                    .pushReaction(PushReaction.BLOCK))/* {
+                @Override
+                public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.oiprotoikosmoi.unstable_incontinuity_block.tooltip"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            }*/);
 
     public static final DeferredBlock<Block> NIHIL_BLOCK = registerBlock("nihil_block",
             () -> new NihilBlock(BlockBehaviour.Properties.of()
@@ -41,7 +64,8 @@ public class ModBlocks {
                     .sound(SoundType.EMPTY)
                     .mapColor(MapColor.COLOR_BLACK)
                     .noLootTable()
-                    .noCollission()));
+                    .noCollission()
+                    .pushReaction(PushReaction.BLOCK)));
 
     /*
 

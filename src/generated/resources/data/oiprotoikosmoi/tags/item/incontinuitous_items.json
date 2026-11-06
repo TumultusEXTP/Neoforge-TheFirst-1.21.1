@@ -1,5 +1,7 @@
 {
   "values": [
-    "oiprotoikosmoi:incontinuitous_block"
+    "oiprotoikosmoi:incontinuitous_block",
+    "oiprotoikosmoi:incontinuitous_shard",
+    "oiprotoikosmoi:unstable_incontinuity_block"
   ]
 }

@@ -4,6 +4,8 @@
   "creativetab.oiprotoikosmoi.bismuth_items": "Bismuth Items",
 
   "block.oiprotoikosmoi.incontinuitous_block": "Incontinuitous Block",
+  "block.oiprotoikosmoi.unstable_incontinuity_block": "Unstable Incontinuitous Block",
+  "tooltip.oiprotoikosmoi.unstable_incontinuity_block.tooltip": "§cVOLATILE§r",
   "block.oiprotoikosmoi.nihil_block": "Nihil Block",
   "block.oiprotoikosmoi.bismuth_block": "Block of Bismuth",
   "block.oiprotoikosmoi.bismuth_ore": "Bismuth Ore",
@@ -21,6 +23,9 @@
   "block.oiprotoikosmoi.bismuth_trapdoor": "Bismuth Trapdoor",
   "block.oiprotoikosmoi.bismuth_lamp": "Bismuth Lamp",
 
+  "item.oiprotoikosmoi.nihil_bucket": "Nihil Bucket",
+  "item.oiprotoikosmoi.incontinuitous_shard": "Incontinuitous Shard",
+  "item.oiprotoikosmoi.nihility": "Nihility",
   "item.oiprotoikosmoi.bismuth": "Bismuth",
   "item.oiprotoikosmoi.raw_bismuth": "Raw Bismuth",
   "item.oiprotoikosmoi.chisel": "Chisel",

@@ -17,6 +17,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+        basicItem(ModItems.NIHIL_BUCKET.get());
+        basicItem(ModItems.INCONTINUITOUS_SHARD.get());
+        basicItem(ModItems.NIHILITY.get());
+
         basicItem(ModItems.BISMUTH.get());
         basicItem(ModItems.RAW_BISMUTH.get());
 
@@ -33,6 +38,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModBlocks.BISMUTH_DOOR.asItem());
     }
+
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<?> baseBlock) {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))
                 .texture("texture", ResourceLocation.fromNamespaceAndPath(TheFirst.MODID,

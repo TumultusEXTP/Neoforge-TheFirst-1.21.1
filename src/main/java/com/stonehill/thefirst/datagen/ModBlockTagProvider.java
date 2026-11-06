@@ -20,6 +20,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK.get())
+
                 .add(ModBlocks.BISMUTH_BLOCK.get())
                 .add(ModBlocks.BISMUTH_ORE.get())
                 .add(ModBlocks.DEEPSLATE_BISMUTH_ORE.get());
@@ -28,6 +30,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BISMUTH_ORE.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK.get())
+
                 .add(ModBlocks.DEEPSLATE_BISMUTH_ORE.get());
 
         tag(BlockTags.FENCES).add(ModBlocks.BISMUTH_FENCE.get());

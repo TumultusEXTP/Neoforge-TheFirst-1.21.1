@@ -9,6 +9,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,16 +27,21 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ModTags.Items.NIHIL_ITEMS)
                 .add(ModBlocks.NIHIL_BLOCK.get().asItem())
-                .add(Items.BLACK_DYE);
+                .add(ModItems.NIHILITY.get());
 
         tag(ModTags.Items.INCONTINUITOUS_ITEMS)
-                .add(ModBlocks.INCONTINUITOUS_BLOCK.get().asItem());
+                .add(ModBlocks.INCONTINUITOUS_BLOCK.get().asItem())
+                .add(ModItems.INCONTINUITOUS_SHARD.get())
+                .add(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK.get().asItem());
 
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(Items.DIAMOND) //make coal (unmetamorphize it i guess)
+                .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.COMPASS)
                 .add(ModItems.BISMUTH.get())
                 .add(ModItems.RAW_BISMUTH.get());
+
+        tag(Tags.Items.BUCKETS)
+                .add(ModItems.NIHIL_BUCKET.asItem());
     }
 }

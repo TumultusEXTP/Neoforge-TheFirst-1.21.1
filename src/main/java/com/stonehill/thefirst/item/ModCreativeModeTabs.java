@@ -24,8 +24,13 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModBlocks.INCONTINUITOUS_BLOCK);
-
+                        output.accept(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK);
                         output.accept(ModBlocks.NIHIL_BLOCK);
+
+                        output.accept(ModItems.NIHIL_BUCKET);
+
+                        output.accept(ModItems.INCONTINUITOUS_SHARD);
+                        output.accept(ModItems.NIHILITY);
 
                     }).build());
 
