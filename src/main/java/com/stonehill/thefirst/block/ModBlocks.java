@@ -50,13 +50,13 @@ public class ModBlocks {
                     .mapColor(MapColor.COLOR_GRAY)
                     .requiresCorrectToolForDrops()
                     .friction(1f)
-                    .pushReaction(PushReaction.BLOCK))/* {
+                    .pushReaction(PushReaction.BLOCK)) {
                 @Override
                 public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
                     tooltipComponents.add(Component.translatable("tooltip.oiprotoikosmoi.unstable_incontinuity_block.tooltip"));
                     super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
                 }
-            }*/);
+            });
 
     public static final DeferredBlock<Block> NIHIL_BLOCK = registerBlock("nihil_block",
             () -> new NihilBlock(BlockBehaviour.Properties.of()
