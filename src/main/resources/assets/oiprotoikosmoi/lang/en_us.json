@@ -35,6 +35,11 @@
   "tooltip.oiprotoikosmoi.radish.tooltip": "Tastes really great!",
   "item.oiprotoikosmoi.frostfire_ice": "Frostfire Ice",
   "item.oiprotoikosmoi.starlight_ashes": "Starlight Ashes",
+  "item.oiprotoikosmoi.bismuth_sword": "Bismuth Sword",
+  "item.oiprotoikosmoi.bismuth_axe": "Bismuth Axe",
+  "item.oiprotoikosmoi.bismuth_pickaxe": "Bismuth Pickaxe",
+  "item.oiprotoikosmoi.bismuth_shovel": "Bismuth Shovel",
+  "item.oiprotoikosmoi.bismuth_hoe": "Bismuth Hoe",
 
   "oiprotoikosmoi.configuration.title": "Example Mod Configs",
   "oiprotoikosmoi.configuration.section.oiprotoikosmoi.common.toml": "Example Mod Configs",

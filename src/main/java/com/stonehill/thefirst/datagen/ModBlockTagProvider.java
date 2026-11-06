@@ -2,6 +2,7 @@ package com.stonehill.thefirst.datagen;
 
 import com.stonehill.thefirst.TheFirst;
 import com.stonehill.thefirst.block.ModBlocks;
+import com.stonehill.thefirst.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -24,7 +25,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
                 .add(ModBlocks.BISMUTH_BLOCK.get())
                 .add(ModBlocks.BISMUTH_ORE.get())
-                .add(ModBlocks.DEEPSLATE_BISMUTH_ORE.get());
+                .add(ModBlocks.DEEPSLATE_BISMUTH_ORE.get())
+                .add(ModBlocks.BISMUTH_LAMP.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BISMUTH_ORE.get());
@@ -32,10 +34,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK.get())
 
-                .add(ModBlocks.DEEPSLATE_BISMUTH_ORE.get());
+                .add(ModBlocks.DEEPSLATE_BISMUTH_ORE.get())
+                .add(ModBlocks.BISMUTH_LAMP.get());
 
         tag(BlockTags.FENCES).add(ModBlocks.BISMUTH_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.BISMUTH_FENCE_GATE.get());
         tag(BlockTags.WALLS).add(ModBlocks.BISMUTH_WALL.get());
+
+        tag(ModTags.Blocks.NEEDS_BISMUTH_TOOL)
+                .add(ModBlocks.BISMUTH_LAMP.get())
+                .addTags(BlockTags.NEEDS_IRON_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_BISMUTH_TOOL)
+                .addTags(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_BISMUTH_TOOL);
     }
 }
