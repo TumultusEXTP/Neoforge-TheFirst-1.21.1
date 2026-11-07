@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -28,6 +29,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_nihility", has(ModItems.NIHILITY))
                 .save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.TOOLS, ModItems.INCONTINUITOUS_BLOOM.get())
+                .requires(ModItems.INCONTINUITOUS_SHARD.get())
+                .requires(Tags.Items.INGOTS_IRON)
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .save(recipeOutput);
+
+        //remove below
         List<ItemLike> BISMUTH_SMELTABLES = List.of(ModItems.RAW_BISMUTH, ModBlocks.BISMUTH_ORE, ModBlocks.DEEPSLATE_BISMUTH_ORE);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BISMUTH_BLOCK.get())
                 .pattern("BBB")

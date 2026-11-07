@@ -5,6 +5,7 @@ import com.stonehill.thefirst.block.ModBlocks;
 import com.stonehill.thefirst.item.custom.ChiselItem;
 import com.stonehill.thefirst.item.custom.FuelItem;
 import com.stonehill.thefirst.item.custom.HammerItem;
+import com.stonehill.thefirst.item.custom.IncontinuitousBloomItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
@@ -19,17 +20,31 @@ public class ModItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TheFirst.MODID);
 
+    //tools
+    public static final DeferredItem<Item> INCONTINUITOUS_BLOOM = ITEMS.register("incontinuitous_bloom",
+            () -> new IncontinuitousBloomItem(
+                    new Item.Properties()
+                            .durability(127)
+            )
+    );
+
     public static final DeferredItem<Item> NIHIL_BUCKET = ITEMS.register("nihil_bucket",
-            () -> new SolidBucketItem(ModBlocks.NIHIL_BLOCK.get(),
+            () -> new SolidBucketItem(
+                    ModBlocks.NIHIL_BLOCK.get(),
                     SoundEvents.EMPTY,
                     new Item.Properties()
-                            .stacksTo(1)));
+                            .stacksTo(1)
+            )
+    );
 
+    //ingredients
     public static final DeferredItem<Item> INCONTINUITOUS_SHARD = ITEMS.register("incontinuitous_shard",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties())
+    );
 
     public static final DeferredItem<Item> NIHILITY = ITEMS.register("nihility",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties())
+    );
 
     /*
 
@@ -84,7 +99,5 @@ public class ModItems {
             () -> new HammerItem(ModToolTiers.BISMUTH, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.BISMUTH, 7f, -3.5f))));
 
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
+    public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

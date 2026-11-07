@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
+        handheldItem(ModItems.INCONTINUITOUS_BLOOM.get());
         basicItem(ModItems.NIHIL_BUCKET.get());
         basicItem(ModItems.INCONTINUITOUS_SHARD.get());
         basicItem(ModItems.NIHILITY.get());

@@ -32,6 +32,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ModTags.Items.INCONTINUITOUS_ITEMS)
                 .add(ModBlocks.INCONTINUITOUS_BLOCK.get().asItem())
+                .add(ModItems.INCONTINUITOUS_BLOOM.get())
                 .add(ModItems.INCONTINUITOUS_SHARD.get())
                 .add(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK.get().asItem());
 
