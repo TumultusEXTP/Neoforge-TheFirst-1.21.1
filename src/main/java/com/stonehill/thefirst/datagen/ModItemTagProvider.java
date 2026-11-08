@@ -28,16 +28,46 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ModTags.Items.NIHIL_ITEMS)
                 .add(ModBlocks.NIHIL_BLOCK.get().asItem())
+                .add(ModItems.DISMAL_HELMET.get())
+                .add(ModItems.DISMAL_CHESTPLATE.get())
+                .add(ModItems.DISMAL_LEGGINGS.get())
+                .add(ModItems.DISMAL_BOOTS.get())
                 .add(ModItems.NIHILITY.get());
 
         tag(ModTags.Items.INCONTINUITOUS_ITEMS)
                 .add(ModBlocks.INCONTINUITOUS_BLOCK.get().asItem())
                 .add(ModItems.INCONTINUITOUS_BLOOM.get())
+                .add(ModItems.DISMAL_HELMET.get())
+                .add(ModItems.DISMAL_CHESTPLATE.get())
+                .add(ModItems.DISMAL_LEGGINGS.get())
+                .add(ModItems.DISMAL_BOOTS.get())
+                .add(ModItems.INCONTINUITOUS_SWORD.get())
+                .add(ModItems.INCONTINUITOUS_AXE.get())
+                .add(ModItems.INCONTINUITOUS_PICKAXE.get())
+                .add(ModItems.INCONTINUITOUS_SHOVEL.get())
+                .add(ModItems.INCONTINUITOUS_HOE.get())
                 .add(ModItems.INCONTINUITOUS_SHARD.get())
                 .add(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK.get().asItem());
 
         tag(Tags.Items.BUCKETS)
                 .add(ModItems.NIHIL_BUCKET.asItem());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.DISMAL_HELMET.get())
+                .add(ModItems.DISMAL_CHESTPLATE.get())
+                .add(ModItems.DISMAL_LEGGINGS.get())
+                .add(ModItems.DISMAL_BOOTS.get());
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.INCONTINUITOUS_SWORD.get());
+        tag(ItemTags.AXES)
+                .add(ModItems.INCONTINUITOUS_AXE.get());
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.INCONTINUITOUS_PICKAXE.get());
+        tag(ItemTags.SHOVELS)
+                .add(ModItems.INCONTINUITOUS_SHOVEL.get());
+        tag(ItemTags.HOES)
+                .add(ModItems.INCONTINUITOUS_HOE.get());
 
         //remove below after tutorial
         tag(ModTags.Items.TRANSFORMABLE_ITEMS)
@@ -57,5 +87,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.BISMUTH_SHOVEL.get());
         tag(ItemTags.HOES)
                 .add(ModItems.BISMUTH_HOE.get());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BISMUTH_HELMET.get())
+                .add(ModItems.BISMUTH_CHESTPLATE.get())
+                .add(ModItems.BISMUTH_LEGGINGS.get())
+                .add(ModItems.BISMUTH_BOOTS.get());
     }
 }

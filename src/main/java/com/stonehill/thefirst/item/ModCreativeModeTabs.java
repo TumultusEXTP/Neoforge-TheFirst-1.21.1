@@ -24,8 +24,19 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModBlocks.INCONTINUITOUS_BLOCK);
-                        output.accept(ModBlocks.NIHIL_BLOCK);
                         output.accept(ModBlocks.UNSTABLE_INCONTINUITY_BLOCK);
+                        output.accept(ModBlocks.NIHIL_BLOCK);
+
+                        output.accept(ModItems.DISMAL_HELMET);
+                        output.accept(ModItems.DISMAL_CHESTPLATE);
+                        output.accept(ModItems.DISMAL_LEGGINGS);
+                        output.accept(ModItems.DISMAL_BOOTS);
+
+                        output.accept(ModItems.INCONTINUITOUS_SWORD);
+                        output.accept(ModItems.INCONTINUITOUS_AXE);
+                        output.accept(ModItems.INCONTINUITOUS_PICKAXE);
+                        output.accept(ModItems.INCONTINUITOUS_SHOVEL);
+                        output.accept(ModItems.INCONTINUITOUS_HOE);
 
                         output.accept(ModItems.INCONTINUITOUS_BLOOM);
                         output.accept(ModItems.NIHIL_BUCKET);
@@ -58,6 +69,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BISMUTH_SHOVEL);
                         output.accept(ModItems.BISMUTH_HOE);
                         output.accept(ModItems.BISMUTH_HAMMER);
+
+                        output.accept(ModItems.BISMUTH_HELMET);
+                        output.accept(ModItems.BISMUTH_CHESTPLATE);
+                        output.accept(ModItems.BISMUTH_LEGGINGS);
+                        output.accept(ModItems.BISMUTH_BOOTS);
                     }).build());
 
     public static final Supplier<CreativeModeTab> BISMUTH_BLOCK_TAB = CREATIVE_MODE_TAB.register("bismuth_blocks_tab",

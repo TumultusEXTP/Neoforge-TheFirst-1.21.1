@@ -2,6 +2,15 @@
   "values": [
     "oiprotoikosmoi:incontinuitous_block",
     "oiprotoikosmoi:incontinuitous_bloom",
+    "oiprotoikosmoi:dismal_helmet",
+    "oiprotoikosmoi:dismal_chestplate",
+    "oiprotoikosmoi:dismal_leggings",
+    "oiprotoikosmoi:dismal_boots",
+    "oiprotoikosmoi:incontinuitous_sword",
+    "oiprotoikosmoi:incontinuitous_axe",
+    "oiprotoikosmoi:incontinuitous_pickaxe",
+    "oiprotoikosmoi:incontinuitous_shovel",
+    "oiprotoikosmoi:incontinuitous_hoe",
     "oiprotoikosmoi:incontinuitous_shard",
     "oiprotoikosmoi:unstable_incontinuity_block"
   ]
