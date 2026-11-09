@@ -19,34 +19,56 @@ public class ModItems {
 
     //armor
     public static final DeferredItem<ArmorItem> DISMAL_HELMET = ITEMS.register("dismal_helmet",
-            () -> new ModArmorItem(ModArmorMaterials.DISMAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(32))));
+            () -> new ModArmorItem(
+                    ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties()
+                            .durability(ArmorItem.Type.HELMET.getDurability(32))));
     public static final DeferredItem<ArmorItem> DISMAL_CHESTPLATE = ITEMS.register("dismal_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.DISMAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(32))));
+            () -> new ArmorItem(
+                    ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
+                    ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties()
+                            .durability(ArmorItem.Type.CHESTPLATE.getDurability(32))));
     public static final DeferredItem<ArmorItem> DISMAL_LEGGINGS = ITEMS.register("dismal_leggings",
-            () -> new ArmorItem(ModArmorMaterials.DISMAL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(32))));
+            () -> new ArmorItem(
+                    ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
+                    ArmorItem.Type.LEGGINGS,
+                    new Item.Properties()
+                            .durability(ArmorItem.Type.LEGGINGS.getDurability(32))));
     public static final DeferredItem<ArmorItem> DISMAL_BOOTS = ITEMS.register("dismal_boots",
-            () -> new ArmorItem(ModArmorMaterials.DISMAL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(32))));
+            () -> new ArmorItem(
+                    ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Properties()
+                            .durability(ArmorItem.Type.BOOTS.getDurability(32))));
 
     //incontinuitous tool set
     public static final DeferredItem<SwordItem> INCONTINUITOUS_SWORD = ITEMS.register("incontinuitous_sword",
-            () -> new SwordItem(ModToolTiers.INCONTINUITOUS, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTiers.INCONTINUITOUS, 3, -1f))));
+            () -> new SwordItem(
+                    ModToolTiers.INCONTINUITOUS,
+                    new Item.Properties()
+                            .attributes(SwordItem.createAttributes(ModToolTiers.INCONTINUITOUS, 3, -1f))));
     public static final DeferredItem<AxeItem> INCONTINUITOUS_AXE = ITEMS.register("incontinuitous_axe",
-            () -> new AxeItem(ModToolTiers.INCONTINUITOUS, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 6f, -2.4f))));
+            () -> new AxeItem(
+                    ModToolTiers.INCONTINUITOUS,
+                    new Item.Properties()
+                            .attributes(AxeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 6f, -2.4f))));
     public static final DeferredItem<PickaxeItem> INCONTINUITOUS_PICKAXE = ITEMS.register("incontinuitous_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.INCONTINUITOUS, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 1f, -2.4f))));
+            () -> new PickaxeItem(
+                    ModToolTiers.INCONTINUITOUS,
+                    new Item.Properties()
+                            .attributes(PickaxeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 1f, -2.4f))));
     public static final DeferredItem<ShovelItem> INCONTINUITOUS_SHOVEL = ITEMS.register("incontinuitous_shovel",
-            () -> new ShovelItem(ModToolTiers.INCONTINUITOUS, new Item.Properties()
-                    .attributes(ShovelItem.createAttributes(ModToolTiers.INCONTINUITOUS, 1.5f, -2.5f))));
+            () -> new ShovelItem(
+                    ModToolTiers.INCONTINUITOUS,
+                    new Item.Properties()
+                            .attributes(ShovelItem.createAttributes(ModToolTiers.INCONTINUITOUS, 1.5f, -2.5f))));
     public static final DeferredItem<HoeItem> INCONTINUITOUS_HOE = ITEMS.register("incontinuitous_hoe",
-            () -> new HoeItem(ModToolTiers.INCONTINUITOUS, new Item.Properties()
-                    .attributes(HoeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 0f, -2f))));
+            () -> new HoeItem(
+                    ModToolTiers.INCONTINUITOUS,
+                    new Item.Properties()
+                            .attributes(HoeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 0f, -2f))));
 
     //tools
     public static final DeferredItem<Item> INCONTINUITOUS_BLOOM = ITEMS.register("incontinuitous_bloom",
@@ -140,6 +162,10 @@ public class ModItems {
     public static final DeferredItem<ArmorItem> BISMUTH_BOOTS = ITEMS.register("bismuth_boots",
             () -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(19))));
+
+    public static final DeferredItem<Item> BISMUTH_HORSE_ARMOR = ITEMS.register("bismuth_horse_armor",
+            () -> new AnimalArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
+                    false, new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }
