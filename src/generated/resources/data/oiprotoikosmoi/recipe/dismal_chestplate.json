@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "i": {
+      "item": "oiprotoikosmoi:incontinuitous_shard"
+    },
+    "n": {
+      "item": "oiprotoikosmoi:nihility"
+    }
+  },
+  "pattern": [
+    "ini",
+    "iii",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "id": "oiprotoikosmoi:dismal_chestplate"
+  }
+}

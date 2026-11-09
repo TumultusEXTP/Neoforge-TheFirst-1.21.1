@@ -5,6 +5,7 @@ import com.stonehill.thefirst.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.Tags;
@@ -33,6 +34,84 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.INCONTINUITOUS_SHARD.get())
                 .requires(Tags.Items.INGOTS_IRON)
                 .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.INCONTINUITOUS_SWORD.get())
+                .pattern(" i ")
+                .pattern(" i ")
+                .pattern(" s ")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('s', Items.STICK)
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INCONTINUITOUS_AXE.get())
+                .pattern("ii ")
+                .pattern("is ")
+                .pattern(" s ")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('s', Items.STICK)
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INCONTINUITOUS_PICKAXE.get())
+                .pattern("iii")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('s', Items.STICK)
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INCONTINUITOUS_SHOVEL.get())
+                .pattern(" i ")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('s', Items.STICK)
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.INCONTINUITOUS_HOE.get())
+                .pattern("ii ")
+                .pattern(" s ")
+                .pattern(" s ")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('s', Items.STICK)
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DISMAL_HELMET.get())
+                .pattern("nnn")
+                .pattern("iii")
+                .pattern("ini")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('n', ModItems.NIHILITY.get())
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .unlockedBy("has_nihility", has(ModItems.NIHILITY))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DISMAL_CHESTPLATE.get())
+                .pattern("ini")
+                .pattern("iii")
+                .pattern("iii")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('n', ModItems.NIHILITY.get())
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .unlockedBy("has_nihility", has(ModItems.NIHILITY))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DISMAL_LEGGINGS.get())
+                .pattern("iii")
+                .pattern("ini")
+                .pattern("ini")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('n', ModItems.NIHILITY.get())
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .unlockedBy("has_nihility", has(ModItems.NIHILITY))
+                .save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DISMAL_BOOTS.get())
+                .pattern("ini")
+                .pattern("ini")
+                .pattern("nnn")
+                .define('i', ModItems.INCONTINUITOUS_SHARD.get())
+                .define('n', ModItems.NIHILITY.get())
+                .unlockedBy("has_incontinuitous_shard", has(ModItems.INCONTINUITOUS_SHARD))
+                .unlockedBy("has_nihility", has(ModItems.NIHILITY))
                 .save(recipeOutput);
 
         //remove below

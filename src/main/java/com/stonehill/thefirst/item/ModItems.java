@@ -2,10 +2,7 @@ package com.stonehill.thefirst.item;
 
 import com.stonehill.thefirst.TheFirst;
 import com.stonehill.thefirst.block.ModBlocks;
-import com.stonehill.thefirst.item.custom.ChiselItem;
-import com.stonehill.thefirst.item.custom.FuelItem;
-import com.stonehill.thefirst.item.custom.HammerItem;
-import com.stonehill.thefirst.item.custom.IncontinuitousBloomItem;
+import com.stonehill.thefirst.item.custom.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
@@ -22,7 +19,7 @@ public class ModItems {
 
     //armor
     public static final DeferredItem<ArmorItem> DISMAL_HELMET = ITEMS.register("dismal_helmet",
-            () -> new ArmorItem(ModArmorMaterials.DISMAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.DISMAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(32))));
     public static final DeferredItem<ArmorItem> DISMAL_CHESTPLATE = ITEMS.register("dismal_chestplate",
             () -> new ArmorItem(ModArmorMaterials.DISMAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
@@ -132,7 +129,7 @@ public class ModItems {
 
     //bismuth armor
     public static final DeferredItem<ArmorItem> BISMUTH_HELMET = ITEMS.register("bismuth_helmet",
-            () -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(19))));
     public static final DeferredItem<ArmorItem> BISMUTH_CHESTPLATE = ITEMS.register("bismuth_chestplate",
             () -> new ArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,

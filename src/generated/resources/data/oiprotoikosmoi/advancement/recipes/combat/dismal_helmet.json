@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_incontinuitous_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "oiprotoikosmoi:incontinuitous_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_nihility": {
+      "conditions": {
+        "items": [
+          {
+            "items": "oiprotoikosmoi:nihility"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "oiprotoikosmoi:dismal_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_incontinuitous_shard",
+      "has_nihility"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oiprotoikosmoi:dismal_helmet"
+    ]
+  }
+}
