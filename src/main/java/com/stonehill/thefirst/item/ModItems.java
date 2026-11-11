@@ -4,6 +4,7 @@ import com.stonehill.thefirst.TheFirst;
 import com.stonehill.thefirst.block.ModBlocks;
 import com.stonehill.thefirst.item.custom.*;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Blocks;
@@ -166,6 +167,9 @@ public class ModItems {
     public static final DeferredItem<Item> BISMUTH_HORSE_ARMOR = ITEMS.register("bismuth_horse_armor",
             () -> new AnimalArmorItem(ModArmorMaterials.BISMUTH_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> KAUPEN_SMITHING_TEMPLATE = ITEMS.register("kaupen_armor_trim_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TheFirst.MODID, "kaupen")));
 
     public static void register(IEventBus eventBus) {ITEMS.register(eventBus);}
 }

@@ -56,6 +56,9 @@
   "item.oiprotoikosmoi.bismuth_leggings": "Bismuth Leggings",
   "item.oiprotoikosmoi.bismuth_boots": "Bismuth Boots",
   "item.oiprotoikosmoi.bismuth_horse_armor": "Bismuth Horse Armor",
+  "item.oiprotoikosmoi.kaupen_armor_trim_smithing_template": "Kaupen Armor Trim",
+
+  "trim_material.oiprotoikosmoi.nihility": "Nihil Material",
 
   "oiprotoikosmoi.configuration.title": "Example Mod Configs",
   "oiprotoikosmoi.configuration.section.oiprotoikosmoi.common.toml": "Example Mod Configs",
@@ -63,5 +66,8 @@
   "oiprotoikosmoi.configuration.items": "Item List",
   "oiprotoikosmoi.configuration.logDirtBlock": "Log Dirt Block",
   "oiprotoikosmoi.configuration.magicNumberIntroduction": "Magic Number Text",
-  "oiprotoikosmoi.configuration.magicNumber": "Magic Number"
+  "oiprotoikosmoi.configuration.magicNumber": "Magic Number",
+
+  "trim_pattern.oiprotoikosmoi.kaupen": "Kaupen Armor Trim",
+  "trim_material.oiprotoikosmoi.bismuth": "Bismuth Material"
 }

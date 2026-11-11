@@ -1,0 +1,9 @@
+{
+  "asset_name": "nihility",
+  "description": {
+    "color": "#000000",
+    "translate": "trim_material.oiprotoikosmoi.nihility"
+  },
+  "ingredient": "oiprotoikosmoi:nihility",
+  "item_model_index": 0.3
+}
