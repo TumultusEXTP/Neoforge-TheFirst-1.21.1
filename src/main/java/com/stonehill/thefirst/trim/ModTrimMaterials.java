@@ -24,7 +24,7 @@ public class ModTrimMaterials {
             ResourceKey.create(Registries.TRIM_MATERIAL, ResourceLocation.fromNamespaceAndPath(TheFirst.MODID, "bismuth"));
 
     public static void bootstrap(BootstrapContext<TrimMaterial> context) {
-        register(context, NIHILITY, ModItems.NIHILITY.get(), Style.EMPTY.withColor(TextColor.parseColor("#000000").getOrThrow()), 0.3f);
+        register(context, NIHILITY, ModItems.NIHILITY.get(), Style.EMPTY.withColor(TextColor.parseColor("#222222").getOrThrow()), 0.3f);
 
         register(context, BISMUTH, ModItems.BISMUTH.get(), Style.EMPTY.withColor(TextColor.parseColor("#031cfc").getOrThrow()), 0.5f);
     }
