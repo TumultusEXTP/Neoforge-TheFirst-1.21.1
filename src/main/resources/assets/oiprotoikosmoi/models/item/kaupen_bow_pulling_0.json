@@ -1,0 +1,6 @@
+{
+  "parent": "oiprotoikosmoi:item/kaupen_bow",
+  "textures": {
+    "layer0": "oiprotoikosmoi:item/kaupen_bow_pulling_0"
+  }
+}
