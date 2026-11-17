@@ -4,6 +4,10 @@ import com.stonehill.thefirst.block.ModBlocks;
 import com.stonehill.thefirst.component.ModDataComponents;
 import com.stonehill.thefirst.item.ModCreativeModeTabs;
 import com.stonehill.thefirst.item.ModItems;
+import com.stonehill.thefirst.util.ModItemProperties;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -82,5 +86,13 @@ public class TheFirst {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            ModItemProperties.addCustomItemProperties();
+        }
     }
 }

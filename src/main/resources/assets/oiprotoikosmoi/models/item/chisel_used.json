@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "oiprotoikosmoi:item/chisel"
+    "layer0": "oiprotoikosmoi:item/chisel_used"
   }
 }
