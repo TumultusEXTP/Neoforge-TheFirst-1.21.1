@@ -2,7 +2,7 @@
 
 ### CURRENT VERSION:
 
-#### v0.0.0.38-beta
+#### v0.0.0.39-beta
 
 ###### Notes:
 - rushing this changelog due to time constraints
