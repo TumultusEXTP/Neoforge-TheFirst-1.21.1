@@ -17,10 +17,10 @@ import java.util.Map;
 
 public class IncontinuitousBloomItem extends Item {
 
-    private static final Map<Block, Block> BLOOM_MAP =
+    /*private static final Map<Block, Block> BLOOM_MAP =
             Map.of(
                     Blocks.BEDROCK, ModBlocks.NIHIL_BLOCK.get()
-            );
+            );*/
 
     public IncontinuitousBloomItem(Properties properties) {
         super(properties);
@@ -62,7 +62,7 @@ public class IncontinuitousBloomItem extends Item {
 
             for (int x = -range; x <= range; x++) {
                 for (int y = -range; y <= range; y++) {
-                    if (x == 0 || y == 0) {
+                    if (x == 0 ^ y == 0) {
                         positionsF.add(new BlockPos(initalBlockPos.getX() + x, initalBlockPos.getY(), initalBlockPos.getZ() + y));
                     }
                 }
@@ -72,7 +72,7 @@ public class IncontinuitousBloomItem extends Item {
         if (traceResult.getDirection() == Direction.NORTH || traceResult.getDirection() == Direction.SOUTH) {
             for (int x = -range; x <= range; x++) {
                 for (int y = -range; y <= range; y++) {
-                    if (x == 0 || y == 0) {
+                    if (x == 0 ^ y == 0) {
                         positionsF.add(new BlockPos(initalBlockPos.getX() + x, initalBlockPos.getY() + y, initalBlockPos.getZ()));
                     }
                 }
@@ -82,7 +82,7 @@ public class IncontinuitousBloomItem extends Item {
         if (traceResult.getDirection() == Direction.EAST || traceResult.getDirection() == Direction.WEST) {
             for (int x = -range; x <= range; x++) {
                 for (int y = -range; y <= range; y++) {
-                    if (x == 0 || y == 0) {
+                    if (x == 0 ^ y == 0) {
                         positionsF.add(new BlockPos(initalBlockPos.getX(), initalBlockPos.getY() + y, initalBlockPos.getZ() + x));
                     }
                 }

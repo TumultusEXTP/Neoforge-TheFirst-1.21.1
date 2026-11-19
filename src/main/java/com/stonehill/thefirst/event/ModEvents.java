@@ -61,25 +61,21 @@ public class ModEvents {
             //is proper setup
             for (BlockPos pos : IncontinuitousBloomItem.getBlocksForFrame(1, initialBlockPos, serverPlayer)) {
 
-                //isn't clicked block
-                if (pos != initialBlockPos) {
+                BlockState state = level.getBlockState(pos);
 
-                    BlockState state = level.getBlockState(pos);
+                //isn't proper setup
+                if (!state.is(ModTags.Blocks.INCONTINUITY_PORTAL_BLOCKS)) {return;}
 
-                    //isn't proper setup
-                    if (!state.is(ModTags.Blocks.INCONTINUITY_PORTAL_BLOCKS)) {return;}
-
-                    /*
-                    //is proper frame material (why doesn't this let me use ModTags.Blocks.INCONTINUITY_PORTAL_BLOCKS?)
-                    if (level.getBlockState(initialBlockPos).getBlock() == Blocks.BEDROCK
-                            || level.getBlockState(initialBlockPos).getBlock() == ModBlocks.NIHIL_BLOCK.get()) {
-                        isProperSetup = true;
-                        continue;
-                    } else {
-                        isProperSetup = false;
-                        return;
-                    }*/
-                }
+                /*
+                   //is proper frame material (why doesn't this let me use ModTags.Blocks.INCONTINUITY_PORTAL_BLOCKS?)
+                   if (level.getBlockState(initialBlockPos).getBlock() == Blocks.BEDROCK
+                        || level.getBlockState(initialBlockPos).getBlock() == ModBlocks.NIHIL_BLOCK.get()) {
+                    isProperSetup = true;
+                    continue;
+                } else {
+                    isProperSetup = false;
+                    return;
+                }*/
             }
 
             //was proper setup
