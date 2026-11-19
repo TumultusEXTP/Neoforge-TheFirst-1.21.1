@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
@@ -49,6 +50,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_INCONTINUITOUS_TOOL)
                 .addTags(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .remove(ModTags.Blocks.NEEDS_INCONTINUITOUS_TOOL);
+
+        //for incontinuity portal testing
+        tag(ModTags.Blocks.INCONTINUITY_PORTAL_BLOCKS)
+                .add(ModBlocks.NIHIL_BLOCK.get())
+                .add(Blocks.BEDROCK);
 
         //tutorial tags
         tag(BlockTags.FENCES).add(ModBlocks.BISMUTH_FENCE.get());
