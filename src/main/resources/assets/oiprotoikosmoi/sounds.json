@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.oiprotoikosmoi.chisel.use",
+    "sounds": [
+      "oiprotoikosmoi:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.oiprotoikosmoi.magic_block_break",
+    "sounds": [
+      "oiprotoikosmoi:magic_block_break"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.oiprotoikosmoi.magic_block_step",
+    "sounds": [
+      "oiprotoikosmoi:magic_block_step"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.oiprotoikosmoi.magic_block_place",
+    "sounds": [
+      "oiprotoikosmoi:magic_block_place"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.oiprotoikosmoi.magic_block_hit",
+    "sounds": [
+      "oiprotoikosmoi:magic_block_hit"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.oiprotoikosmoi.magic_block_fall",
+    "sounds": [
+      "oiprotoikosmoi:magic_block_fall"
+    ]
+  }
+}

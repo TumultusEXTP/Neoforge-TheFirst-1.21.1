@@ -6,6 +6,7 @@ import com.stonehill.thefirst.block.custom.MagicBlock;
 import com.stonehill.thefirst.block.custom.NihilBlock;
 import com.stonehill.thefirst.block.custom.UnstableIncontinuityBlock;
 import com.stonehill.thefirst.item.ModItems;
+import com.stonehill.thefirst.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -115,7 +116,7 @@ public class ModBlocks {
 
     //magic block
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable().sound(SoundType.SOUL_SAND)));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
 
 

@@ -4,6 +4,7 @@ import com.stonehill.thefirst.block.ModBlocks;
 import com.stonehill.thefirst.component.ModDataComponents;
 import com.stonehill.thefirst.item.ModCreativeModeTabs;
 import com.stonehill.thefirst.item.ModItems;
+import com.stonehill.thefirst.sound.ModSounds;
 import com.stonehill.thefirst.util.ModItemProperties;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -43,6 +44,7 @@ public class TheFirst {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModDataComponents.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

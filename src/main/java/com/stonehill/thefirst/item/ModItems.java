@@ -24,60 +24,78 @@ public class ModItems {
                     ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()
-                            .durability(ArmorItem.Type.HELMET.getDurability(32))));
+                            .rarity(Rarity.UNCOMMON)
+                            .durability(ArmorItem.Type.HELMET.getDurability(32))
+            ));
     public static final DeferredItem<ArmorItem> DISMAL_CHESTPLATE = ITEMS.register("dismal_chestplate",
             () -> new ArmorItem(
                     ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()
-                            .durability(ArmorItem.Type.CHESTPLATE.getDurability(32))));
+                            .rarity(Rarity.UNCOMMON)
+                            .durability(ArmorItem.Type.CHESTPLATE.getDurability(32))
+            ));
     public static final DeferredItem<ArmorItem> DISMAL_LEGGINGS = ITEMS.register("dismal_leggings",
             () -> new ArmorItem(
                     ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()
-                            .durability(ArmorItem.Type.LEGGINGS.getDurability(32))));
+                            .rarity(Rarity.UNCOMMON)
+                            .durability(ArmorItem.Type.LEGGINGS.getDurability(32))
+            ));
     public static final DeferredItem<ArmorItem> DISMAL_BOOTS = ITEMS.register("dismal_boots",
             () -> new ArmorItem(
                     ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()
-                            .durability(ArmorItem.Type.BOOTS.getDurability(32))));
+                            .rarity(Rarity.UNCOMMON)
+                            .durability(ArmorItem.Type.BOOTS.getDurability(32))
+            ));
 
     //incontinuitous tool set
     public static final DeferredItem<SwordItem> INCONTINUITOUS_SWORD = ITEMS.register("incontinuitous_sword",
             () -> new SwordItem(
                     ModToolTiers.INCONTINUITOUS,
                     new Item.Properties()
-                            .attributes(SwordItem.createAttributes(ModToolTiers.INCONTINUITOUS, 3, -1f))));
+                            .rarity(Rarity.UNCOMMON)
+                            .attributes(SwordItem.createAttributes(ModToolTiers.INCONTINUITOUS, 3, -1f))
+            ));
     public static final DeferredItem<AxeItem> INCONTINUITOUS_AXE = ITEMS.register("incontinuitous_axe",
             () -> new AxeItem(
                     ModToolTiers.INCONTINUITOUS,
                     new Item.Properties()
-                            .attributes(AxeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 6f, -2.4f))));
+                            .rarity(Rarity.UNCOMMON)
+                            .attributes(AxeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 6f, -2.4f))
+            ));
     public static final DeferredItem<PickaxeItem> INCONTINUITOUS_PICKAXE = ITEMS.register("incontinuitous_pickaxe",
             () -> new PickaxeItem(
                     ModToolTiers.INCONTINUITOUS,
                     new Item.Properties()
-                            .attributes(PickaxeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 1f, -2.4f))));
+                            .rarity(Rarity.UNCOMMON)
+                            .attributes(PickaxeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 1f, -2.4f))
+            ));
     public static final DeferredItem<ShovelItem> INCONTINUITOUS_SHOVEL = ITEMS.register("incontinuitous_shovel",
             () -> new ShovelItem(
                     ModToolTiers.INCONTINUITOUS,
                     new Item.Properties()
-                            .attributes(ShovelItem.createAttributes(ModToolTiers.INCONTINUITOUS, 1.5f, -2.5f))));
+                            .rarity(Rarity.UNCOMMON)
+                            .attributes(ShovelItem.createAttributes(ModToolTiers.INCONTINUITOUS, 1.5f, -2.5f))
+            ));
     public static final DeferredItem<HoeItem> INCONTINUITOUS_HOE = ITEMS.register("incontinuitous_hoe",
             () -> new HoeItem(
                     ModToolTiers.INCONTINUITOUS,
                     new Item.Properties()
-                            .attributes(HoeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 0f, -2f))));
+                            .rarity(Rarity.UNCOMMON)
+                            .attributes(HoeItem.createAttributes(ModToolTiers.INCONTINUITOUS, 0f, -2f))
+            ));
 
     //tools
     public static final DeferredItem<Item> INCONTINUITOUS_BLOOM = ITEMS.register("incontinuitous_bloom",
             () -> new IncontinuitousBloomItem(
                     new Item.Properties()
+                            .rarity(Rarity.UNCOMMON)
                             .durability(127)
-            )
-    );
+            ));
 
     public static final DeferredItem<Item> NIHIL_BUCKET = ITEMS.register("nihil_bucket",
             () -> new SolidBucketItem(
@@ -85,17 +103,16 @@ public class ModItems {
                     SoundEvents.EMPTY,
                     new Item.Properties()
                             .stacksTo(1)
-            )
-    );
+            ));
 
     //ingredients
     public static final DeferredItem<Item> INCONTINUITOUS_SHARD = ITEMS.register("incontinuitous_shard",
-            () -> new Item(new Item.Properties())
-    );
+            () -> new Item(
+                    new Item.Properties()
+                            .rarity(Rarity.UNCOMMON)));
 
     public static final DeferredItem<Item> NIHILITY = ITEMS.register("nihility",
-            () -> new Item(new Item.Properties())
-    );
+            () -> new Item(new Item.Properties()));
 
     /*
 
