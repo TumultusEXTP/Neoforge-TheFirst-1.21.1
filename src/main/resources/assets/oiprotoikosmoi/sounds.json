@@ -34,5 +34,13 @@
     "sounds": [
       "oiprotoikosmoi:magic_block_fall"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "oiprotoikosmoi:bar_brawl",
+        "stream": true
+      }
+    ]
   }
 }
