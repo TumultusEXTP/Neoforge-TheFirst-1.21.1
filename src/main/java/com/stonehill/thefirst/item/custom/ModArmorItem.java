@@ -25,6 +25,7 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterials.DISMAL_ARMOR_MATERIAL,
                             List.of(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1, 1, false, false),
                                     new MobEffectInstance(MobEffects.SATURATION, 1, 1, false, false),
+                                    new MobEffectInstance(MobEffects.DARKNESS, 1, 1, false, false),
                                     new MobEffectInstance(MobEffects.SLOW_FALLING, 1, 1, false, false)))
                     .build();
 

@@ -72,5 +72,7 @@
   "oiprotoikosmoi.configuration.magicNumber": "Magic Number",
 
   "trim_pattern.oiprotoikosmoi.kaupen": "Kaupen Armor Trim",
-  "trim_material.oiprotoikosmoi.bismuth": "Bismuth Material"
+  "trim_material.oiprotoikosmoi.bismuth": "Bismuth Material",
+
+  "effect.oiprotoikosmoi.slimey": "Slimey"
 }
