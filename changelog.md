@@ -2,14 +2,27 @@
 
 ## CURRENT VERSION:
 
+### v0.0.0.42-beta
+##### Notes:
+- Added effect from 26th video
+##### Additions:
+- Slimey effect
+  - Allows for wall climbing
+  - 25% less speed
+##### Changes:
+- Dismal armor set now gives darkness
+
+---
+## OLD VERSIONS:
+
 ### v0.0.0.41-beta
 ##### Notes:
 - Added music disc from 25th video
 ##### Additions:
 -Bar Brawl music disc by Bryan Tech
 
----
-## OLD VERSIONS:
+<br>
+<br>
 
 ### v0.0.0.40-beta
 ##### Notes:
@@ -19,6 +32,9 @@
 ##### Changes:
 - Magic Block and Chisel use custom sounds
 - Items made with Incontinuitous Shard are now of Uncommon rarity
+
+<br>
+<br>
 
 ### v0.0.0.39-beta
 ##### Notes:
